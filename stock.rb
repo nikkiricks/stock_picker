@@ -3,7 +3,7 @@ def stock_picker (stocks)
   days_and_profits = {}
   highest_profit = []
 
-  stocks_by_day.each_with_index do |two_days|
+  stocks_by_day.each do |two_days|
     days_and_profits[two_days] = (two_days[1] - two_days[0])
   end
 
